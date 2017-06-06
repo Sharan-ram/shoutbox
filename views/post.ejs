@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href = "/stylesheets/style.css">
+</head>
+<body>
+  <% include menu %>
+  <h1><%= title %></h1>
+  <form action = '/post' method = 'post'>
+    <input type = 'text' name = 'entry[title]' placeholder="Title"/>
+    <input type = 'textarea' name = 'entry[body]' placeholder="Body"/>
+    <input type = "submit" value = 'Post'/>
+  </form>
+</body>
+</html>
